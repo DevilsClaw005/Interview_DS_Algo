@@ -59,7 +59,7 @@ public:
         int carry = 0;
 
         for(int i = n-1; i >= 1; i--) {
-            if(((s[i] - '0') + carry) % 2 == 1) { //odd
+            if(((s.charAt(i) - '0') + carry) % 2 == 1) { //odd
                 op += 2;
                 carry = 1;
             } else {
